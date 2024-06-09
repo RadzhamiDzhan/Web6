@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+    <title>lab6</title>
+</head>
+<body>
+    <header class="header">
+        <h1>ЛАБОРАТОРНА РОБОТА №6</h1>
+        <h2>Тема:   ОБ'ЄКТ. МЕТОДИ ОБ'ЄКТА. МАСИВ ОБ'ЄКТІВ. ДЕСТРУКТУРИЗАЦІЯ ОБ'ЄКТІВ. CALLBACK. СТРІЛОЧНІ ФУНКЦІЇ. СТРІЛОЧНІ ФУНКЦІЇ ЯК КОЛБЕКИ.</h2>
+        <h3>Мета: придбати практичні навички роботи з об'єктами. Методи об'єкта. Callback. Стрілочні функції. Стрілочні функції як колбеки.
+            Реалізація програм засобами мови JAVASCRIPT
+            </h3>
+    </header>
+    <main>
+        <section class="section"> 
+            <h3 class="black">Завдання 2</h3>
+            <p>Напишіть функцію getProductDetails, яка приймає ідентифікатор товару productId та дві колбек-функції successCallback та errorCallback.Функція getProductDetails повинна отримати деталі про вказаний товар та передати їх у successCallback. У випадку якщо товар не знайдено, викликається errorCallback і передається повідомлення про помилку.   
+        <h3 class="black">Виконання</h3>
+        <div id="productDetails"></div>       
+        </section>
+        <section class="section"> 
+            <h3 class="black">Завдання 4</h3>
+            <p>З об'єкту concerts отримати масив, який З масиву потрібно прибрати міста, в яких концерт  уже пройшов і   відсортувати їх у хронологічному порядку.Результат вивести у консоль.Очікуваний результат ["Одеса", "Умань", "Харків"] Застосувати стрілочні функції
+            const concerts = {
+                Київ: new Date("2020-04-01"),
+                Умань: new Date("2025-07-02"),
+                Вінниця: new Date("2020-04-21"),
+                Одеса: new Date("2025-03-15"),
+                Хмельницький: new Date("2020-04-18"),
+                Харків: new Date("2025-07-10"),
+            };   
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="filteredCities"></div>
+        </section>
+        <section class="section"> 
+            <h3 class="black">Завдання 6</h3>
+            <p> Напишіть функцію, яка приймає массив об'єктів і повертає новий массив об'єктів,у якому є знижка на  30 % на всі медикаменти ціна, яких перевищує 300 грн у масиві Надайте ід для кожного медикамента    const medicines = [
+                { name: "Noshpa", price: 170 },
+                { name: "Analgin", price: 55 },
+                { name: "Quanil", price: 310 },
+                { name: "Alphacholine", price: 390 },
+              
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="newMedicine"></div>   
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 8</h3>
+            <p> Напиши функцію конструктор Storage який створює об'єкти  Для управління складом товарів.  При виклику отримуватиме один агрумент - початковий масив товарів,  і записувати їх у властивість items. 
+                Додай методи класу:   getItems() - повертайте масив товарів   addItems(item) - отримує новий товар та додає його до поточних   removeItem(item) - отримує товар і, якщо він є, видаляє його з поточних  
+              const arr = ["apple", "banana", "mango"]              
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="StorageItems1"></div>   
+            <div id="StorageItems2"></div>  
+            <div id="StorageItems3"></div>  
+        </section> 
+        <section class="section"> 
+        <h3 class="black">Завдання 9</h3>
+        <p> Поверніть об'єкт, в якому вказано кількість тегів.
+            Очікуваний результат {js: 3, nodejs: 3, html: 2, css: 2, react: 2}
+            
+             const tweets = [
+                { id: "000", likes: 5, tags: ["js", "nodejs"] },
+                { id: "001", likes: 2, tags: ["html", "css"] },
+                { id: "002", likes: 17, tags: ["html", "js", "nodejs"] },
+                { id: "003", likes: 8, tags: ["css", "react"] },
+                { id: "004", likes: 0, tags: ["js", "nodejs", "react"] },
+                ];                         
+        </p>
+        <h3 class="black">Виконання</h3>
+        <div id="tagCount"></div> 
+    </section> 
+        <section class="section"> 
+            <h3 class="black">Завдання 10</h3>
+            <p> Напишіть функцію checkBrackets(str) яка приймає рядок коду (someFn)  і перевіряє правильність закриття дужок () {} []
+                Якщо рядок містить коректний код функція повертає true.
+                В іншому випадку повертає false                          
+            </p>
+            <h3 class="black">Виконання</h3>
+            <div id="checkBrackets"></div>  
+        </section> 
+        <section class="section"> 
+            <h3 class="black">Висновки</h3>
+            <p> 
+                Під час виконання лабораторної роботи отримано практичні навички роботи з об'єктами, методами об'єктів, callback функціями, стрілочними функціями, а також зі стрілочними функціями як callback функціями.Програмний код реалізовано засобами мови JAVASCRIPT               
+            </p>
+        </section>  
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
